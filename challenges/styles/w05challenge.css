@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+#ban {
+    width: 100%;
+}
+.pics {
+    border: 10px solid #322424;
+    width: 250px;
+    margin: 50px 50px;
+    border-radius: 50%;
+}
+#gallary {
+    background-color: rgb(87, 74, 74);
+    margin: 0%;
+    text-align: center;
+}
+#con {
+    margin: 0px;
+    background-color: rgb(87, 74, 74);
+}

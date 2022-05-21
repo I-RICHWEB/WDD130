@@ -1,0 +1,40 @@
+body {
+    background-color: pink;
+    text-align: center;
+}
+h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+h1:hover {
+    color: black;
+}
+header p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    color: white;
+}
+main p {
+    color: black;
+    text-align: justify;
+    width: 30%;
+    margin: 1% auto;
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    width: 15%;
+    margin: 0 auto;
+}
+.quote{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Tapestry&display=swap');
+footer p {
+    color: black;
+    margin: 1% auto;
+    font-family: 'Roboto', sans-serif;
+}
