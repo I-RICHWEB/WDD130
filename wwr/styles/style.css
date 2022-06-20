@@ -35,6 +35,7 @@ header {
     background-color: #00ee6ea1;
     display: grid;
     grid-template-columns: 150px auto;
+    z-index: 1;
 }
 nav a:hover {
     background-color: #fff;
@@ -175,44 +176,239 @@ nav {
     grid-column: 8/10;
     grid-row: 2/3;
 }
-@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    .home-title {
-        font-size: 25px;
-        color: #6f7364;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
+/* the send page work started from here. It has not been easy to complete.*/
+.book-link{
+    background-color: #8338ec;
+    color: #fff;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: auto;
+    font-family: oswald, sans-serif;
+
+}
+.river-head {
+    font-family: koulen, Tohoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.river-para {
+    color: white;
+    background-color: rgba(22, 67, 104, 0.729);
+    font-family: Oswald, Akshar, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.backgd {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 67, 104, 0.59);
+}
+#idaho-river {
+    font-family: Koulen, sans-serif;
+    color:white;
+    padding: 5px; 
+    border-radius: 10px;
+    margin: auto;
+}
+.river-imgs {
+    border: 5px solid black;
+}
+#active {
+    color: blue;
+    text-decoration: underline;
+}
+#active-home {
+    color: blue;
+    text-decoration: underline;
+}
+#h4-para {
+   font-family: Oswald, Akshar, sans-serif ;
+   background-color: rgb(58,134,255,0.71);
+   color: #fff;
+   padding: 15px;
+   margin-bottom: -1px;
+}
+#success {
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: -1;
+}
+#success-img {
+    width: 100%;
+    height: 100%;
+}
+#success-info {
+    color: #fff;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+}
+#success-box {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+#date {
+    font-size: 1.2em;
+}
+#first-river {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 50px;
+}
+#first-b {
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+#first-info {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+#linkbox1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: auto;
+}
+#f-river-img {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+#f-river-title {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+#f-p {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    padding: 10px;
+}
+#f-img {
+    background-color: rgba(22, 67, 104, 0.59);
+    width: 100%;
+    height: 500px;
+}
+#second-river {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    margin-top: 70px;
+}
+#second-b {
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+#second-info {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+#linkbox2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: auto;
+}
+#s-river-img {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+#s-river-title {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#s-p {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    padding: 10px;
+}
+#second-r-img {
+    width: 100%;
+    height: 100%;
+}
+#third-river {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    margin-top: 70px;
+}
+#third-b {
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+#third-info {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+#linkbox3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: auto;
+}
+#t-river-img {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+#t-river-title {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#t-p {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+#third-r-img {
+    width: 100%;
+    height: 100%;
+}
+.book-link:hover {
+    background-color: black;
+    color: yellow;
+}
+.info-head {
+    background-color: aqua;
+    padding: 15px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
+#rivers {
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+}
+.rivers-option {
+    padding: 20px;
+    border: 10px solid white;
+    border-radius: 10px;
+    margin: 10px;
+}
+#inro-info {
+    font-family: Akshar,Koulen,sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 20px;
+    margin: auto;
+    font-size: 1.5em;
+    background-color: rgba(128, 128, 128, 0.582);
+}
+#inro-info:hover {
+    background-color: black;
+    opacity: .8;
+    color: yellow;
+}
+.f-date, .f-price, .s-date, .s-price,
+.t-date, .t-price {
+    color: white;
 }
