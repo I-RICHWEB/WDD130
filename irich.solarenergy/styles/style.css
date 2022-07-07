@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Joan&family=Noto+Serif&display=swap');
 #all-content {
-    width: 100vw;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 #logo-link {
     width: 100px;
